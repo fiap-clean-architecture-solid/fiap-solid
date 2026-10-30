@@ -7,7 +7,7 @@ public static class ConfiguracaoInjecao
     public static IServiceCollection AdicionarDependencias(
         this IServiceCollection servicos)
     {
-
+        servicos.AddScoped<ICalculadoraImpostoFactory, CalculadoraImpostoFactory>();
         servicos.AddTransient<CalculadoraImpostoBrasil>();
         servicos.AddTransient<CalculadoraImpostoArgentina>();
 

@@ -9,7 +9,6 @@ public static class ConfiguracaoInjecao
     {
         servicos.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
         servicos.AddScoped<IProdutoServico, ProdutoServico>();
-        servicos.AddScoped<ICalculadoraImpostoFactory, CalculadoraImpostoFactory>();
 
         return servicos;
     }
